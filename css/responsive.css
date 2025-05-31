@@ -5,13 +5,160 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
+  }
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  ul li a:hover {
+    color: black;
+  }
+
+  .phones a:hover,
+  .email a:hover {
+    color: white;
+  }
+  .teammate-social-icons .facebook:hover,
+  .teammate-social-icons .twitter:hover,
+  .teammate-social-icons .linkedin:hover {
+    background-color: grey;
+    cursor: pointer;
+  }
+
+  .twitter:hover .icon,
+  .facebook:hover .icon,
+  .instagram:hover .icon,
+  .linked-in:hover .icon {
+    background-color: white;
+  }
+
+  .twitter:hover span,
+  .facebook:hover span,
+  .instagram:hover span,
+  .linked-in:hover span {
+    color: white;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
-
+@media (max-width: 1023px) {
+  .top-navigation ul {
+    display: none;
+  }
+  .portfolio-list {
+    flex-direction: column;
+  }
+  .portfolio-item {
+    flex-direction: row;
+  }
+  .teammates-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  div.teammates-list::before,
+  div.teammates-list::after {
+    display: none;
+  }
+  .teammate {
+    width: 334px;
+  }
+  .teammate-img-wrapper {
+    width: 334px;
+  }
+  .teammate-data {
+    justify-content: center;
+    align-items: center;
+  }
+  .teammate-info {
+    align-items: center;
+  }
+  .teammate-social-icons div {
+    background-color: grey;
+  }
+  .footer-contacts {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 30px;
+    justify-content: center;
+  }
+  .footer-contacts div {
+    width: 339px;
+    align-items: center;
+  }
+  .address p {
+    width: 182px;
+  }
+  .email,
+  .phones {
+    ul li a {
+      color: white;
+    }
+  }
+  .social-icons div .icon {
+    background-color: white;
+  }
+  .social-icons div span {
+    display: none;
+  }
+  .social-icons {
+    width: 210px;
+  }
+}
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 767px) {
+  .teammates-content {
+    /* width: 767px; */
+  }
+  .portfolio-item {
+    flex-direction: column;
+  }
+  .portfolio-item-info {
+    align-items: center;
+  }
+  .item-description {
+    text-align: center;
+  }
+  .teammates-list-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teammate {
+    flex-direction: row;
+    border: 1px solid;
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+  }
+  .teammate-img-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+  .teammate-img-wrapper img {
+    width: 130px;
+    height: 130px;
+    gap: 10px;
+  }
+  .teammate-data {
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+  }
+
+  .teammate-info {
+    align-items: start;
+  }
+  .teammate-social-icons {
+    gap: 16px;
+  }
+  footer {
+    /* width: 100%; */
+  }
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons div span {
+    display: block;
+    color: white;
+  }
+}
