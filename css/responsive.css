@@ -88,11 +88,9 @@
   .address p {
     width: 182px;
   }
-  .email,
-  .phones {
-    ul li a {
-      color: white;
-    }
+  .email ul li a,
+  .phones ul li a {
+    color: white;
   }
   .social-icons div .icon {
     background-color: white;
@@ -106,9 +104,6 @@
 }
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 @media (max-width: 767px) {
-  .teammates-content {
-    /* width: 767px; */
-  }
   .portfolio-item {
     flex-direction: column;
   }
@@ -149,9 +144,6 @@
   }
   .teammate-social-icons {
     gap: 16px;
-  }
-  footer {
-    /* width: 100%; */
   }
   .social-icons {
     flex-direction: column;
